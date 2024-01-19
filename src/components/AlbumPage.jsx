@@ -51,13 +51,13 @@ const AlbumPage = () => {
 
     return (
         <div className="col-12 col-md-9 offset-md-3 mainPage">
-            <Row className="mb-3 mt-3">
+            <Row className="mb-3 mt-3 me-5">
                 <Col xs={9} lg={11} className="mainLinks d-none d-md-flex">
-                    <a href="www">TRENDING</a>
-                    <a href="www">PODCAST</a>
-                    <a href="www">MOODS AND GENRES</a>
-                    <a href="www">NEW RELEASES</a>
-                    <a href="www">DISCOVER</a>
+                    <a href="trending">TRENDING</a>
+                    <a href="podcast">PODCAST</a>
+                    <a href="MOODS AND GENRES">MOODS AND GENRES</a>
+                    <a href="NEW RELEASES">NEW RELEASES</a>
+                    <a href="DISCOVER">DISCOVER</a>
                 </Col>
             </Row>
             <Row>
@@ -69,25 +69,58 @@ const AlbumPage = () => {
                 <Col md={8} className="p-5">
                     <Row>
                         <Col md={10} className="mb-5" id="trackList">
-                            {tracks && tracks.map((song, index) => (
-                                <div key={index} className="d-flex justify-content-between" onClick={() => { dispatch(updateTrackAction(song)) }}>
-                                    <p className="text-white">{song.title}</p>
-                                    <div className="d-flex align-items-baseline">
+                            {tracks &&
+                                tracks.map((song, index) => (
+                                    <div
+                                        key={index}
+                                        className="d-flex justify-content-between"
+                                        onClick={() => {
+                                            dispatch(updateTrackAction(song));
+                                        }}
+                                    >
                                         <p className="text-white">
-                                            {Math.floor(song.duration / 60)}:{song.duration % 60 < 10 ? `0${song.duration % 60}` : song.duration % 60}
+                                            {song.title}
                                         </p>
-                                        <div onClick={() => handleToggleSelected(index)}>
-                                            {song.selected ? <AiFillHeart
-                                                className="text-white ms-2 pointer"
-                                                onClick={()=>{dispatch(removeFromFavouriteAction(index))}}
-                                            /> : <AiOutlineHeart
-                                                className="text-success ms-2 pointer"
-                                                onClick={()=>{dispatch(addToFavouriteAction(song))}}
-                                            />}
+                                        <div className="d-flex align-items-baseline">
+                                            <p className="text-white">
+                                                {Math.floor(song.duration / 60)}
+                                                :
+                                                {song.duration % 60 < 10
+                                                    ? `0${song.duration % 60}`
+                                                    : song.duration % 60}
+                                            </p>
+                                            <div
+                                                onClick={() =>
+                                                    handleToggleSelected(index)
+                                                }
+                                            >
+                                                {song.selected ? (
+                                                    <AiFillHeart
+                                                        className="text-success ms-2 pointer"
+                                                        onClick={() => {
+                                                            dispatch(
+                                                                removeFromFavouriteAction(
+                                                                    index
+                                                                )
+                                                            );
+                                                        }}
+                                                    />
+                                                ) : (
+                                                    <AiOutlineHeart
+                                                        className="text-success ms-2 pointer"
+                                                        onClick={() => {
+                                                            dispatch(
+                                                                addToFavouriteAction(
+                                                                    song
+                                                                )
+                                                            );
+                                                        }}
+                                                    />
+                                                )}
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            ))}
+                                ))}
                         </Col>
                     </Row>
                 </Col>

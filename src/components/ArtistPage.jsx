@@ -6,17 +6,16 @@ const ArtistPage = () => {
         <div className="col-12 col-md-9 offset-md-3 mainPage">
             <Row className="mb-3">
                 <Col xs={9} lg={11} className="mainLinks d-none d-md-flex">
-                    <a href="www">TRENDING</a>
-                    <a href="www">PODCAST</a>
-                    <a href="www">MOODS AND GENRES</a>
-                    <a href="www">NEW RELEASES</a>
-                    <a href="www">DISCOVER</a>
+                    <a href="trending">TRENDING</a>
+                    <a href="podcast">PODCAST</a>
+                    <a href="MOODS AND GENRES">MOODS AND GENRES</a>
+                    <a href="NEW RELEASES">NEW RELEASES</a>
+                    <a href="DISCOVER">DISCOVER</a>
                 </Col>
             </Row>
 
             <Row>
                 <Col xs={12} md={10} lg={10} className="mt-5">
-                    <h2 className="titleMain"></h2>
                     <div id="followers"></div>
                     <div
                         className="d-flex justify-content-center"

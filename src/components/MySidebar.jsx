@@ -60,16 +60,16 @@ const Sidebar = () => {
           </Navbar.Collapse>
         </div>
 
-        <div className="nav-btn">
+        <div className="nav-btn mb-5">
           <Button
-            className="signup-btn"
+            className="signup-btn text-white"
             variant="success"
             type="button"
           >
             Sign Up
           </Button>
           <Button
-            className="login-btn mb-5"
+            className="login-btn mb-5 text-white"
             variant="success"
             type="button"
           >

@@ -7,24 +7,22 @@ const SearchPage = () => {
     const { query } = useParams();
 
     return (
-        <div className="mainPage">
+        <div className="mainPage ms-5">
             <Row>
-                <Col className="col-9 col-lg-11 mainLinks d-none d-md-flex">
-                    <a href="www">TRENDING</a>
-                    <a href="www">PODCAST</a>
-                    <a href="www">MOODS AND GENRES</a>
-                    <a href="www">NEW RELEASES</a>
-                    <a href="www">DISCOVER</a>
+                <Col xs={9} lg={11} className="mainLinks d-none d-md-flex mt-3">
+                    <a href="trending">TRENDING</a>
+                    <a href="podcast">PODCAST</a>
+                    <a href="MOODS AND GENRES">MOODS AND GENRES</a>
+                    <a href="NEW RELEASES">NEW RELEASES</a>
+                    <a href="DISCOVER">DISCOVER</a>
                 </Col>
             </Row>
             <Row>
-                <Col >
+                <Col>
                     <div id="rock">
                         <h2>Search Results</h2>
-                        <div
-                            id="rockSection"
-                        >
-                            <GetSong  genere={query} showC={12}/>
+                        <div id="rockSection">
+                            <GetSong genere={query} showC={12} />
                         </div>
                     </div>
                 </Col>
