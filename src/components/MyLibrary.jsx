@@ -42,7 +42,7 @@ const MyLibrary = () => {
                                                 </p>
                                                 <div className="me-5">
                                                     <AiFillHeart
-                                                        className="text-white ms-2"
+                                                        className="text-success pointer ms-2"
                                                         onClick={() => { dispatch(removeFromFavouriteAction(song.id)) }}
                                                     />
                                                 </div>

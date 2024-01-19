@@ -16,69 +16,76 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="col-2">
-      <Navbar
-        bg="dark"
-        expand="md"
-        fixed="left"
-        className="justify-content-between"
-        id="sidebar"
-      >
-        <div className="nav-container">
-          <Navbar.Brand>
-            <img
-              src={SpotifyLogo}
-              alt="Spotify_Logo"
-              width="131"
-              height="40"
-              className="my-2"
-            />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarNavAltMarkup" />
-          <Navbar.Collapse id="navbarNavAltMarkup">
-            <Nav className="d-flex flex-column">
-              <Link to="/" className="nav-link">
-                <FontAwesomeIcon icon={faHome} className="mx-2 mt-2" />
-                Home
-              </Link>
-              <Link to="/mylibrary" className="nav-link">
-                <FontAwesomeIcon icon={faBookOpen} className="mx-2" />
-                Your Library
-              </Link>
-              <InputGroup className=" ms-2">
-                <FormControl
-                  type="text"
-                  placeholder="Search"
-                  aria-label="Search"
-                  aria-describedby="basic-addon2"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  onKeyDown={handleSearch}
-                />
-              </InputGroup>
-            </Nav>
-          </Navbar.Collapse>
-        </div>
+      <div className="col-2">
+          <Navbar
+              bg="dark"
+              expand="md"
+              fixed="left"
+              className="justify-content-between"
+              id="sidebar"
+          >
+              <div className="nav-container">
+                  <Navbar.Brand>
+                      <img
+                          src={SpotifyLogo}
+                          alt="Spotify_Logo"
+                          width="131"
+                          height="40"
+                          className="my-2"
+                      />
+                  </Navbar.Brand>
+                  <Navbar.Toggle aria-controls="navbarNavAltMarkup" />
+                  <Navbar.Collapse id="navbarNavAltMarkup">
+                      <Nav className="d-flex flex-column">
+                          <Link to="/" className="nav-link my-2">
+                              <FontAwesomeIcon
+                                  icon={faHome}
+                                  className="mx-2 mt-3"
+                              />
+                              Home
+                          </Link>
+                          <Link to="/mylibrary" className="nav-link mb-3 ">
+                              <FontAwesomeIcon
+                                  icon={faBookOpen}
+                                  className="mx-2"
+                              />
+                              Your Library
+                          </Link>
+                          <InputGroup className=" ms-2 mt-2">
+                              <FormControl
+                                  type="text"
+                                  placeholder="Search"
+                                  aria-label="Search"
+                                  aria-describedby="basic-addon2"
+                                  value={searchQuery}
+                                  onChange={(e) =>
+                                      setSearchQuery(e.target.value)
+                                  }
+                                  onKeyDown={handleSearch}
+                              />
+                          </InputGroup>
+                      </Nav>
+                  </Navbar.Collapse>
+              </div>
 
-        <div className="nav-btn mb-5">
-          <Button
-            className="signup-btn"
-            variant="success"
-            type="button"
-          >
-            Sign Up
-          </Button>
-          <Button
-            className="login-btn"
-            variant="success"
-            type="button"
-          >
-            Login
-          </Button>
-          <a href="www">Cookie Policy</a> | <a href="www"> Privacy</a>
-        </div>
-      </Navbar>
-    </div>
+              <div className="nav-btn mb-5 ">
+                  <Button
+                      className="signup-btn text-white"
+                      variant="success"
+                      type="button"
+                  >
+                      Sign Up
+                  </Button>
+                  <Button
+                      className="login-btn mb-5 text-white"
+                      variant="success"
+                      type="button"
+                  >
+                      Login
+                  </Button>
+              </div>
+          </Navbar>
+      </div>
   );
 };
 

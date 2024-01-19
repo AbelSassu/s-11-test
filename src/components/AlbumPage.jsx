@@ -85,12 +85,12 @@ const AlbumPage = () => {
                     <div>
                       {favourites.some(fav => fav.id === song.id) ? (
                         <AiFillHeart
-                          className="text-white ms-2"
+                          className="text-success ms-2 pointer"
                           onClick={() => handleFavouriteToggle(song)}
                         />
                       ) : (
                         <AiOutlineHeart
-                          className="text-success ms-2"
+                          className="text-success ms-2 pointer"
                           onClick={() => handleFavouriteToggle(song)}
                         />
                       )}

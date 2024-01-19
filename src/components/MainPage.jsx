@@ -41,7 +41,7 @@ const MainPage = () => {
             <Row>
                 <Col className="col-12">
                     <div id="hiphop">
-                        <h2>#HipHop</h2>
+                        <h2>HipHop</h2>
                         <div
                             id="hipHopSection"
                         >
