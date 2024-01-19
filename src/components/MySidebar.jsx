@@ -69,13 +69,13 @@ const Sidebar = () => {
             Sign Up
           </Button>
           <Button
-            className="login-btn"
+            className="login-btn mb-5"
             variant="success"
             type="button"
           >
             Login
           </Button>
-          <a href="www">Cookie Policy</a> | <a href="www"> Privacy</a>
+          
         </div>
       </Navbar>
     </div>
