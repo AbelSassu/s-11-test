@@ -78,10 +78,10 @@ const AlbumPage = () => {
                                         </p>
                                         <div onClick={() => handleToggleSelected(index)}>
                                             {song.selected ? <AiFillHeart
-                                                className="text-white ms-2"
+                                                className="text-white ms-2 pointer"
                                                 onClick={()=>{dispatch(removeFromFavouriteAction(index))}}
                                             /> : <AiOutlineHeart
-                                                className="text-success ms-2"
+                                                className="text-success ms-2 pointer"
                                                 onClick={()=>{dispatch(addToFavouriteAction(song))}}
                                             />}
                                         </div>

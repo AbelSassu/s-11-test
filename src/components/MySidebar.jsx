@@ -38,14 +38,14 @@ const Sidebar = () => {
           <Navbar.Collapse id="navbarNavAltMarkup">
             <Nav className="d-flex flex-column">
               <Link to="/" className="nav-link">
-                <FontAwesomeIcon icon={faHome} className="mx-2 mt-2" />
+                <FontAwesomeIcon icon={faHome} className="mx-2 mt-3" />
                 Home
               </Link>
-              <Link to="/mylibrary" className="nav-link">
+              <Link to="/mylibrary" className="nav-link mt-3">
                 <FontAwesomeIcon icon={faBookOpen} className="mx-2" />
                 Your Library
               </Link>
-              <InputGroup className=" ms-2">
+              <InputGroup className="ms-2 mt-4">
                 <FormControl
                   type="text"
                   placeholder="Search"

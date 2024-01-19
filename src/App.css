@@ -180,7 +180,13 @@ ul {
 .trackHover a {
   text-decoration: none;
 }
+a {
+  text-decoration: none!important;
+}
 
+.pointer, p, img {
+  cursor: pointer;
+}
 #btnPlay {
   font-weight: 700;
   width: 150px;
