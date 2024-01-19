@@ -38,14 +38,14 @@ const Sidebar = () => {
           <Navbar.Collapse id="navbarNavAltMarkup">
             <Nav className="d-flex flex-column">
               <Link to="/" className="nav-link">
-                <FontAwesomeIcon icon={faHome} className="mx-2 mt-3" />
+                <FontAwesomeIcon icon={faHome} className="mx-2 mt-2" />
                 Home
               </Link>
-              <Link to="/mylibrary" className="nav-link mt-3">
+              <Link to="/mylibrary" className="nav-link">
                 <FontAwesomeIcon icon={faBookOpen} className="mx-2" />
                 Your Library
               </Link>
-              <InputGroup className="ms-2 mt-4">
+              <InputGroup className=" ms-2">
                 <FormControl
                   type="text"
                   placeholder="Search"
@@ -62,20 +62,20 @@ const Sidebar = () => {
 
         <div className="nav-btn mb-5">
           <Button
-            className="signup-btn text-white"
+            className="signup-btn"
             variant="success"
             type="button"
           >
             Sign Up
           </Button>
           <Button
-            className="login-btn mb-5 text-white"
+            className="login-btn"
             variant="success"
             type="button"
           >
             Login
           </Button>
-          
+          <a href="www">Cookie Policy</a> | <a href="www"> Privacy</a>
         </div>
       </Navbar>
     </div>

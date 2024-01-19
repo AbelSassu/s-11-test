@@ -11,8 +11,8 @@ npm i @fortawesome/react-fontawesome
 Funzioni implementate:
 
 - ricerca nella sidebar;
-- fetch centralizzata;
-- mylibrary(gestione preferiti redux);
+- fetch centralizzata con redux;
+- Gestione preferiti su Mylibrary con redux, aggiunta e rimozione preferiti.;
 - al click sull'album porta ai brani;
-- al click sul singolo brano mostra il player sul footer con i dettagli della canzone. 
+- al click sul singolo brano mostra il player sul player con i dettagli della canzone. 
 
