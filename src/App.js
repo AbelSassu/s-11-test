@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Col, Container , Row} from "react-bootstrap";
 import MainPage from "./components/MainPage";
-import ArtistPage from "./components/ArtistPage";
 import AlbumPage from "./components/AlbumPage";
 import SearchPage from "./components/SearchPage";
 import MediaPlayer from "./components/MediaPlayer";
@@ -27,7 +26,6 @@ const App = () => (
           
           <Routes>
             <Route path="/" element={<MainPage />} />
-            <Route path="/artist" element={<ArtistPage/>}/>
             <Route path="/album/:id" element={<AlbumPage/>}/>
             <Route path="/search/:query" element={<SearchPage/>}/>
             <Route path="/mylibrary" element={<MyLibrary/>} />

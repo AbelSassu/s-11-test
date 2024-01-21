@@ -1,4 +1,3 @@
-// songsReducer.js
 import { GET_SONGS } from '../actions';
 
 const initialState = {

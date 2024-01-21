@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { useSelector } from "react-redux";
-import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
+import { AiFillHeart } from "react-icons/ai";
 import { useDispatch } from "react-redux";
 
 

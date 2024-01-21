@@ -7,7 +7,7 @@ const SearchPage = () => {
     const { query } = useParams();
 
     return (
-        <div className="mainPage">
+        <div className="mainPage ms-5 mt-3">
             <Row>
                 <Col className="col-9 col-lg-11 mainLinks d-none d-md-flex">
                     <a href="www">TRENDING</a>
@@ -24,7 +24,7 @@ const SearchPage = () => {
                         <div
                             id="rockSection"
                         >
-                            <GetSong  genere={query} showC={12}/>
+                            <GetSong  genre={query} showC={12}/>
                         </div>
                     </div>
                 </Col>

@@ -21,7 +21,7 @@ const MainPage = () => {
                         <div
                             id="rockSection"
                         >
-                            <GetSong  genere="rock" showC={4}/>
+                            <GetSong  genere="Rock" showC={4}/>
                         </div>
                     </div>
                 </Col>

@@ -1,6 +1,5 @@
 import { ADD_TO_FAVOURITE, REMOVE_FROM_FAVOURITE } from "../actions";
 
-// Funzione per ottenere l'elenco dei preferiti dal localStorage
 const getFavouriteListFromLocalStorage = () => {
     const storedList = localStorage.getItem("favouriteList");
     return storedList ? JSON.parse(storedList) : [];

@@ -1,4 +1,3 @@
-// Importazioni necessarie
 import React, { useEffect, useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import { useParams } from "react-router-dom";
@@ -39,13 +38,6 @@ const AlbumPage = () => {
     fetchAlbum();
   }, [id]);
 
-  const handleToggleSelected = (index) => {
-    setTracks((prevTracks) => {
-      const updatedTracks = [...prevTracks];
-      updatedTracks[index] = { ...updatedTracks[index], selected: !updatedTracks[index].selected };
-      return updatedTracks;
-    });
-  };
 
   const handleFavouriteToggle = (song) => {
     if (favourites.some(fav => fav.id === song.id)) {
