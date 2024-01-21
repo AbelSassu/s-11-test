@@ -14,6 +14,8 @@ Funzioni implementate:
 - fetch centralizzata con redux;
 - Gestione preferiti su Mylibrary con redux, aggiunta e rimozione preferiti.;
 - al click sull'album porta ai brani;
-- al click sul singolo brano mostra il player sul player con i dettagli della canzone. 
-- la riproduzione del brano è ora funzionante
+- al click sul singolo brano mostra sul player i dettagli della canzone. 
+- la riproduzione del brano è ora funzionante con tempo 
+- implementato localStorage al refresh e chiusura pagina
+
 

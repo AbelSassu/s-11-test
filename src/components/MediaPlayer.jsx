@@ -25,7 +25,7 @@ const MediaPlayer = () => {
 
         const handleEnded = () => {
             setIsPlaying(false);
-            setCurrentTime(0); // Reimposta il contatore quando la traccia è terminata
+            setCurrentTime(0); 
             setFormattedTime(formatTime(0));
         };
 
