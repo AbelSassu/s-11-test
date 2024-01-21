@@ -24,7 +24,7 @@ const SearchPage = () => {
                         <div
                             id="rockSection"
                         >
-                            <GetSong  genre={query} showC={12}/>
+                            <GetSong  genere={query} showC={12}/>
                         </div>
                     </div>
                 </Col>
