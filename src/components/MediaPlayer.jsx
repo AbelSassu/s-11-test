@@ -25,6 +25,8 @@ const MediaPlayer = () => {
 
         const handleEnded = () => {
             setIsPlaying(false);
+            setCurrentTime(0); // Reimposta il contatore quando la traccia è terminata
+            setFormattedTime(formatTime(0));
         };
 
         if (audioRef.current) {
@@ -41,7 +43,7 @@ const MediaPlayer = () => {
                 audioRef.current.removeEventListener("ended", handleEnded);
             }
         };
-    }, []);
+    }, [isPlaying]);
 
     const playPauseHandler = () => {
         if (audioRef.current) {

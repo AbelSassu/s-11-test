@@ -51,7 +51,7 @@ const Sidebar = () => {
                                 />
                                 Your Library
                             </Link>
-                            <InputGroup className=" ms-2">
+                            <InputGroup className=" ms-2 mt-2">
                                 <FormControl
                                     type="text"
                                     placeholder="Search"
@@ -77,7 +77,7 @@ const Sidebar = () => {
                         Sign Up
                     </Button>
                     <Button
-                        className="login-btn"
+                        className="login-btn mb-5"
                         variant="success"
                         type="button"
                     >
